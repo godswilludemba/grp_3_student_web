@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.All{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    
+
+}
+h6{
+    color: darkgray;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    height: 70px;
+    width: 60px;
+    border-radius: 50%;
+  
+}
+.pix{
+    gap: 15px;
+}
