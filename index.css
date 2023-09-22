@@ -1,0 +1,261 @@
+/* Styling for each component is demarketed with comment so as for the 
+co-collaborator to know where to put their styling since we are using one stylesheet.
+to avoid merge conflict  */
+
+
+/* There is a naming conversion we introduce in our html to be in styling 
+to avoid merge conflict  */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*  start for styling for homepage */
+.homepage-hero-container{
+    background-color: #FFA500;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.homepage-header{
+    color: white;
+    width: 95%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage-header .hompage-Navlinks ul{
+    display: flex;
+   list-style-type: none;
+
+}
+
+.homepage-header .hompage-Navlinks ul li{
+    padding: 20px;
+}
+
+.homepage-header .hompage-Navlinks ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+/* .homepage-header .hompage-Navlinks ul{
+    display: inline-flex;
+    list-style: none;
+    padding: 15px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* closing for homepage styling */
+
+/*  start for styling for About_ Me  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* closing for About styling */
+
+
+
+
+
+ /*  start for styling for portfolio */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* closing for portfolio styling */
+
+/*  start for styling for testimonial */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* closing for testimonail styling */
+
+
+/*  start for styling for Blog/Article */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* closing for Blog/Article styling */
+
+
+
+
+
+
+/*  start for styling for Contact us */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* closing for Contact Us styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
