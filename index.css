@@ -191,7 +191,7 @@ to avoid merge conflict  */
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 15px;
+    padding: 20px;
 }
 .homepage-section2-box1{
   width: 100%;
@@ -242,8 +242,13 @@ to avoid merge conflict  */
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 400px;
+    padding: 20px;
 
+}
+
+
+.homepage-section3-box1 img{
+  max-width: 100%;
 }
 
 

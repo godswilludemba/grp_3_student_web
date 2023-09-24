@@ -57,6 +57,10 @@ to avoid merge conflict  */
         grid-template-columns: 1fr;
       }
 
+      .homepage-main-section3{
+        grid-template-columns: 1fr;
+      }
+
   }
   
   /* Responsive styles for mobile devices (up to 480px) */
