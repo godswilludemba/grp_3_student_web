@@ -61,6 +61,10 @@ to avoid merge conflict  */
         grid-template-columns: 1fr;
       }
 
+      .responsive-footer {
+        flex-direction: column;
+      }
+
   }
   
   /* Responsive styles for mobile devices (up to 480px) */

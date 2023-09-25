@@ -237,12 +237,16 @@ to avoid merge conflict  */
 
 
 .homepage-main-section3{
-    background-color: green;
+  background-color: #114e60;
+  color:white;
     width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
 
 }
 
@@ -251,13 +255,61 @@ to avoid merge conflict  */
   max-width: 100%;
 }
 
+.homepage-section3-box2 {
 
-footer{
-    width: 100%;
-    height: 100px;
-    background-color: grey;
+  text-align: center;
+  margin-bottom: 20px; /* Add some spacing between the two boxes */
 }
 
+.homepage-section3-box2 h2 {
+  font-size: 24px;
+}
+
+.homepage-section3-box2 p {
+  font-size: 16px;
+}
+
+.homepage-section3-box2 button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e6eff7;
+  color: #114e60;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+  .responsive-footer {
+    background-color: #ffff;
+    color:  #114e60;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .footer-logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .footer-Navlinks .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-Navlinks .nav-links .nav-links li {
+    font-size: 16px;
+  }
+  
+  .footer-Navlinks .nav-links a {
+    text-decoration: none;
+    color:  #114e60;
+  }
 
 
 
