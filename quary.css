@@ -1,0 +1,120 @@
+/* Styling for each component is demarketed with comment so as for the 
+co-collaborator to know where to put their styling since we are using one stylesheet.
+to avoid merge conflict  */
+
+/* There is a naming conversion we introduce in our html to be in styling 
+to avoid merge conflict  */
+
+
+  
+  /*  start for styling for homepage */
+  @media screen and (max-width: 768px) {
+    .homepage-header .homepage-logo h1 {
+      font-size: 20px;
+    }
+  
+    .homepage-header .hompage-Navlinks .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      display: none; /* Initially hidden for tablets */
+    }
+  
+    .homepage-header .hompage-Navlinks .menu-icon {
+      display: block; /* Display the menu icon for tablets */
+    }
+
+
+    .homepage-hero-section {
+        flex-direction: column;
+      }
+    
+      .homepage-hero-text h1 {
+        padding-top: 5px;
+        font-size: 25px;
+      }
+    
+      .homepage-hero-text p {
+        font-size: 16px;
+      }
+
+      .homepage-hero-image, .homepage-hero-text{
+        width: 100%;
+      }
+
+      .homepage-main-section2{
+        grid-template-columns: 1fr;
+      }
+
+      .homepage-section2-box1{
+        width: 100%;
+      }
+
+      .homepage-section2-box2{
+        width: 100%;
+      }
+      
+      .homepage-section2-box2  .section2-min-box{
+        grid-template-columns: 1fr;
+      }
+
+      .homepage-main-section3{
+        grid-template-columns: 1fr;
+      }
+
+      .responsive-footer {
+        flex-direction: column;
+      }
+
+  }
+  
+  /* Responsive styles for mobile devices (up to 480px) */
+  @media screen and (max-width: 480px) {
+    .homepage-header {
+      padding: 10px;
+    }
+  
+    .homepage-header .homepage-logo h1 {
+      font-size: 18px;
+    }
+  
+    .homepage-header .hompage-Navlinks .nav-links {
+      font-size: 16px;
+    }
+    .homepage-hero-text h1 {
+        padding-top: 5px;
+        font-size: 30px;
+      }
+    
+      .homepage-hero-text p {
+        font-size: 12px;
+      }
+
+      .homepage-main-section2{
+        grid-template-columns: 1fr;
+      }
+  }
+  
+  
+  
+  /* closing for homepage styling */
+  
+  /*  start for styling for About_ Me  */
+  
+  /* closing for About styling */
+  
+  /*  start for styling for portfolio */
+  
+  /* closing for portfolio styling */
+  
+  /*  start for styling for testimonial */
+  
+  /* closing for testimonail styling */
+  
+  /*  start for styling for Blog/Article */
+  
+  /* closing for Blog/Article styling */
+  
+  /*  start for styling for Contact us */
+  
+  /* closing for Contact Us styling */
+  

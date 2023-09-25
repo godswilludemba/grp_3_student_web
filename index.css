@@ -1,0 +1,336 @@
+/* Styling for each component is demarketed with comment so as for the 
+co-collaborator to know where to put their styling since we are using one stylesheet.
+to avoid merge conflict  */
+
+/* There is a naming conversion we introduce in our html to be in styling 
+to avoid merge conflict  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  start for styling for homepage */
+
+.homepage-hero-container {
+  background-color: #114e60;
+  height: 100vh;
+  width: 100%;
+}
+
+.homepage-header {
+  background-color: #114e60;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage-header .homepage-logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.homepage-header .hompage-Navlinks {
+  display: flex;
+  align-items: center;
+}
+
+.homepage-header .hompage-Navlinks .nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.homepage-header .hompage-Navlinks .nav-links li {
+  font-size: 16px;
+}
+
+.homepage-header .hompage-Navlinks .nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.homepage-header .hompage-Navlinks .menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Initially hidden for larger screens */
+}
+
+
+.homepage-hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 90%;
+  margin: 0 auto;
+ 
+}
+
+.homepage-hero-text {
+  text-align: center;
+  width: 50%;
+}
+
+.homepage-hero-image {
+  width: 50%;
+}
+
+.homepage-hero-image img{
+  width: 100%;
+}
+
+.homepage-hero-text h1 {
+  color: #ffff;
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+
+.homepage-hero-text p {
+  line-height: 20px;
+  font-size: 16px;
+  color: #ffff;
+    /* font-size: 20px; */
+    padding: 5px;
+    font-weight: 100;
+}
+
+
+
+
+
+/* .homepage-hero-section {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  height: 87vh;
+ 
+} */
+
+/* .homepage-hero-section .homepage-hero-text {
+  
+  width: 50%;
+  padding: 100px 10px 60px 10px;
+}
+.homepage-hero-section .homepage-hero-image {
+  background-color: red;
+  width: 50%;
+}
+
+.homepage-hero-section .homepage-hero-text h1{
+    color: #ffff;
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.homepage-hero-section .homepage-hero-text p{
+    color: #ffff;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 100;
+} */
+
+.homepage-hero-text-btn button{
+    /* margin-top: 20px;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 150px; */
+
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e6eff7;
+    color: #114e60;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.homepage-main-section{
+    width: 90%;
+    padding: 20px;
+    background-color: #e6eff7;
+    color: #114e60;
+    margin: 0 auto;
+}
+
+.homepage-main-section h1{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #114e60;
+}
+
+
+.homepage-main-section section{
+    width: 80%;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+.homepage-main-section2{
+    background-color: #ebf8f4;
+
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+.homepage-section2-box1{
+  width: 100%;
+  height: inherit;
+}
+
+.homepage-section2-box1 img{
+  max-width: 100%;
+}
+
+
+.homepage-section2-box2 {
+
+  height: inherit;
+}
+
+
+.homepage-section2-box2 h1{
+    padding-top: 20px;
+    color: #114e60;
+}
+
+.homepage-section2-box2  .section2-min-box{
+    background-color: white;
+    color: #114e60;;
+    border-radius: 10px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50px auto;
+    margin-top: 40px;
+    padding: 20px;
+
+}
+
+.section2-min-box .min-box-icon-image{
+  font-size: 30px;
+}
+
+.homepage-section2-box2  .section2-min-box h2,
+.homepage-section2-box2  .section2-min-box p{
+  padding-top: 10px;
+}
+
+
+.homepage-main-section3{
+  background-color: #114e60;
+  color:white;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+
+}
+
+
+.homepage-section3-box1 img{
+  max-width: 100%;
+}
+
+.homepage-section3-box2 {
+
+  text-align: center;
+  margin-bottom: 20px; /* Add some spacing between the two boxes */
+}
+
+.homepage-section3-box2 h2 {
+  font-size: 24px;
+}
+
+.homepage-section3-box2 p {
+  font-size: 16px;
+}
+
+.homepage-section3-box2 button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e6eff7;
+  color: #114e60;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+  .responsive-footer {
+    background-color: #ffff;
+    color:  #114e60;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .footer-logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .footer-Navlinks .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-Navlinks .nav-links .nav-links li {
+    font-size: 16px;
+  }
+  
+  .footer-Navlinks .nav-links a {
+    text-decoration: none;
+    color:  #114e60;
+  }
+
+
+
+/* closing for homepage styling */
+
+/*  start for styling for About_ Me  */
+
+/* closing for About styling */
+
+/*  start for styling for portfolio */
+
+/* closing for portfolio styling */
+
+/*  start for styling for testimonial */
+
+/* closing for testimonail styling */
+
+/*  start for styling for Blog/Article */
+
+/* closing for Blog/Article styling */
+
+/*  start for styling for Contact us */
+
+/* closing for Contact Us styling */
