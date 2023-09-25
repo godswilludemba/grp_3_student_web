@@ -1,0 +1,61 @@
+.menu{
+  background-color: gray;
+}
+
+.container-contact-form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.contact-us {
+  text-align: center;
+  color: gray;
+}
+
+.submit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.text-name[type="text"],
+.text-name[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.text-name[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.text-name[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.text-name[type="number"]{
+  margin-bottom: 15px;
+}
+
+textarea{
+  width: 24rem;
+  height: 15rem;
+}
+
+ 
+
