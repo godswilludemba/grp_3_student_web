@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="contactform@mediaQuery.css">
+  </head>
+  <body class="menu">
+    <div class="container-contact-form">
+      <h2 class="contact-us">Contact Us</h2>
+      <form class="submit-form" action="submit_form.php" method="POST">
+        <label class="label" for="name">Name:</label>
+        <input class="text-name"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name.."
+          required
+        />
+
+        <label class="label" for="email">Email:</label>
+        <input class="text-name"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email.."
+          required
+        />
+
+        
+
+        <label class="label" for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write your message here.."
+          required
+        ></textarea>
+
+        <input class="text-name" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
