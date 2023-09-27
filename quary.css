@@ -65,6 +65,12 @@ to avoid merge conflict  */
         flex-direction: column;
       }
 
+
+      .Testimonial-content{
+        grid-template-columns: 1fr 1fr;
+      
+     }
+
   }
   
   /* Responsive styles for mobile devices (up to 480px) */
@@ -92,6 +98,12 @@ to avoid merge conflict  */
       .homepage-main-section2{
         grid-template-columns: 1fr;
       }
+
+
+      .Testimonial-content{
+        grid-template-columns: 1fr;
+      
+     }
   }
   
   
@@ -107,6 +119,25 @@ to avoid merge conflict  */
   /* closing for portfolio styling */
   
   /*  start for styling for testimonial */
+
+  
+
+/* @media (max-width: 850px) {
+  .Testimonial-content{
+     grid-template-columns: 1fr 1fr;
+   
+  }
+     
+ } */
+/*  
+ @media (max-width:480px) {
+     .Testimonial-content{
+        grid-template-columns: 1fr;
+      
+     }
+        
+    } */
+ 
   
   /* closing for testimonail styling */
   
