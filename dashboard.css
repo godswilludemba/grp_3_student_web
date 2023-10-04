@@ -27,11 +27,17 @@ body {
     justify-content: center;
 }
 
+.dashboard-side-menu .brand-name h1{
+    font-size: 16px;
+    color: white;
+}
+
 .dashboard-side-menu li {
-    font-size: 24px;
+    font-size: 18px;
     padding: 10px 40px;
     color: white;
     display: flex;
+    gap: 10px;
     align-items: center;
 }
 
