@@ -11,6 +11,9 @@ body {
 
 
 
+
+
+
 .dashboard-side-menu {
     position: fixed;
     background: #f05462;
@@ -18,6 +21,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+  
 }
 
 .dashboard-side-menu .brand-name {
@@ -25,10 +29,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+ 
 }
 
 .dashboard-side-menu .brand-name h1{
-    font-size: 16px;
+    font-size: 24px;
     color: white;
 }
 
@@ -44,4 +49,181 @@ body {
 .dashboard-side-menu li:hover {
     background: white;
     color: #f05462;
+}
+
+
+.dashboard-container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.dashboard-container .dashboard-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dashboard-container .dashboard-header .dashboard-nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-container .dashboard-header .dashboard-nav .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-container .dashboard-header .dashboard-nav .search input[type=text] {
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+    border-radius: 2px;
+}
+
+.dashboard-container .dashboard-header .dashboard-nav .search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.dashboard-container .dashboard-header .dashboard-nav .search button i {
+    width: 30px;
+    height: 30px;
+}
+
+.dashboard-container .dashboard-header .dashboard-nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-container .dashboard-header .dashboard-nav .user i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.dashboard-container .dashboard-header .dashboard-nav .user .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+
+
+.dashboard-container .content {
+    position: relative;
+    margin-top: 5vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+
+.dashboard-container .content .cards {
+    padding: 20px 15px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.dashboard-container .content .cards .card {
+    border-radius: 10px;
+    text-align: center;
+    /* width: 200px;
+    height: 150px; */
+    background: white;
+    /* margin: 20px 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dashboard-container .content .cards .card .box{
+    padding: 20px;
+
+}
+
+.dashboard-container .content .cards .card .box p{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dashboard-container .content .cards .card .box h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.dashboard-container .content .cards .card .box  i{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1050px) {
+    .dashboard-side-menu li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .dashboard-side-menu li span {
+        display: none;
+    }
+    .dashboard-side-menu {
+        align-items: center;
+    }
+    .dashboard-side-menu li i {
+        width: 40px;
+        height: 40px;
+    }
+    .dashboard-side-menu li:hover {
+        background: #f05462;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+
+@media screen and (max-width:536px) {
+    .brand-name h1 {
+        font-size: 10px;
+    }
+    .dashboard-container .content .cards {
+        justify-content: center;
+    }
+    .dashboard-side-menu  li i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .dashboard-container .content .cards {
+        grid-template-columns: 1fr ;
+    }
+
 }
