@@ -87,6 +87,7 @@ body {
 }
 
 .dashboard-container .dashboard-header .dashboard-nav .search input[type=text] {
+    outline: none;
     border: none;
     background: #f1f1f1;
     padding: 10px;
