@@ -9,28 +9,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div class="homepage-hero-container">
+   
 
-      <div class="homepage-header">
-        <div class="homepage-logo">
-          <h1>StudentAchieveStack</h1>
+      <header>
+        <div class="logo">
+           <h1 id="main-logo">StudentAchieveStack</h1> 
         </div>
-    
-        <div class="hompage-Navlinks">
-          <ul class="nav-links">
-            <li><a href="index.html">Create Account</a></li>
-            <li><a href="index.html">Sign In</a></li>
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="index.html">Testimonial</a></li>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo">
+                <h1 id="main-logo">StudentAchieveStack</h1>
+            </div>
+            <ul>
+            <li><a href="SignUp.html">Create Account</a></li>
+            <li><a href="Signin.html">Sign In</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
             <li><a href="index.html">Blog/Article</a></li>
             <li><a href="index.html">Contact Us</a></li>
-          </ul>
-          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-        </div>
-      </div>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
 
-
-
+        </label>
+    </header>
+    
+    <div class="homepage-hero-container">
       <div class="homepage-hero-section">
 
         <div class="homepage-hero-text">

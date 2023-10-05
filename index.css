@@ -11,55 +11,82 @@ to avoid merge conflict  */
   box-sizing: border-box;
 }
 
-/*  start for styling for homepage */
+
+header{
+  width: 90%;
+  height: 70px;
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+
+
+}
+
+.logo{
+  width: 120px;
+  margin-top: 8px;
+}
+
+nav .logo{
+  display: none;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a{
+  color: #212526;
+  display: block;
+  margin: 0 2px;
+  font-weight: 600;
+  padding: 8px 18px;
+  transition: 0.2s;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+
+nav ul li a:hover{
+  background-color: #f6f4ff;
+}
+
+nav ul a.active{
+  background: #675cff;
+  color: white;
+}
+
+.hamburger{
+  display: none;
+  height: fit-content;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 5px;
+  transition: 0.2s;
+
+}
+
+.hamburger:hover{
+  background: #f6f4ff;
+
+}
+
+.hamburger div{
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #212526;
+}
 
 .homepage-hero-container {
   background-color: #114e60;
   height: 100vh;
   width: 100%;
-}
-
-.homepage-header {
-  background-color: #114e60;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.homepage-header .homepage-logo h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.homepage-header .hompage-Navlinks {
-  display: flex;
-  align-items: center;
-}
-
-.homepage-header .hompage-Navlinks .nav-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-
-
-.homepage-header .hompage-Navlinks .nav-links li {
-  font-size: 16px;
-}
-
-.homepage-header .hompage-Navlinks .nav-links a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.homepage-header .hompage-Navlinks .menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-  display: none; /* Initially hidden for larger screens */
 }
 
 
@@ -137,15 +164,6 @@ to avoid merge conflict  */
 } */
 
 .homepage-hero-text-btn button{
-    /* margin-top: 20px;
-    padding: 15px;
-    background-color: green;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    width: 150px; */
-
     margin: 10px;
     padding: 10px 20px;
     font-size: 16px;
@@ -321,7 +339,192 @@ to avoid merge conflict  */
 
 /*  start for styling for portfolio */
 
+.wrapper-Portfolio {
+  background-color: #e6eff7;
+  height: auto;
+}
+
+.Main-Portfolio-container {
+  width: 90vw;
+  height: inherit;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-picture-profile-section {
+  display: grid;
+  grid-template-columns: 20fr 50fr;
+  max-width: 1024px;
+  margin-top: 20px;
+}
+
+.portfolio-picture-profile-section .picture-section img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50px;
+}
+
+.profile-content-1 {
+  width: 100%;
+  height: inherit;
+}
+
+.profile-content-1 .sub-profile-content-1 {
+  margin-left: 70px;
+}
+
+.profile-content-1 h1 {
+  color: #114e60;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 45px;
+  padding-bottom: 10px;
+}
+
+hr {
+  border-top: 1px solid black;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile-content-1 .sub-profile-content-1 .fa-graduation-cap, .fa-envelope,  .fa-location-arrow, .fa-phone-flip {
+  font-size: 10px;
+}
+
+.profile-content-1 .sub-profile-content-1 p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.personal-statement-container {
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 70px;
+}
+
+.personal-statement-container .sub-personal-statement-container-2 {
+  width: 100%;
+  padding-top: 10px;
+  display: block;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.personal-statement-container .sub-personal-statement-container-2 h5 {
+  color: #114e60;
+  padding-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.project-image h3 {
+  background-color: #114e60;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.portfolio-picture-profile-section .profile-content-1 h1,
+.project-section, .project-image h3 {
+  text-decoration: none;
+}
+
+.project-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-section .project-image img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.project-section .project-image:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: -9px -5px 25px -11px rgba(0,0,0,0.84);
+}
+
+.project-section .project-image p {
+  margin-left: 10px;
+  font-size: 15px;
+  display: block;
+  text-align: justify;
+}
+
+.btn-resume {
+  width: 20%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 550;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 80%;
+  margin-bottom: 10px;
+}
+
+.btn-resume:hover {
+  background: #114e60;
+  cursor: pointer;
+  color: #ebf8f4;
+  border: none;
+}
+
+.more-information {
+  margin-top: 30px;
+  margin-left: 70px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.more-information .more-information-1 h2 {
+  padding-bottom: 15px;
+}
+
+.more-information .more-information-1 p {
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.more-information .more-information-2 h2 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  letter-spacing: 5px;
+  padding-bottom: 0px;
+}
+
+.more-information .more-information-2 ul {
+  margin-left: 15px;
+}
+
+.more-information .more-information-2 ul li {
+  line-height: 40px;
+  font-weight: 500;
+}
+
 /* closing for portfolio styling */
+
 
 /*  start for styling for testimonial */
 *{
@@ -330,8 +533,7 @@ to avoid merge conflict  */
   box-sizing: border-box;
 }
 .Testimonial-container{
-  background-color: white;
-  width: 90%;
+  background-color: #e6eff7;
   margin: 0 auto;
 } 
 .Testimonial-content{

@@ -3,11 +3,6 @@
     margin: 10px auto;
     }
 
-    /* .Main-Portfolio-container {
-    max-width: 748px;  
-    margin: auto;
-    } */
-
     .portfolio-picture-profile-section {
     max-width: 900px;
     }
@@ -21,20 +16,9 @@
     margin: 20px 0;
     }
 
-    /* .profile-content-1  {
-    margin: 20px 0;
-    } */
-
     .profile-content-1 .sub-profile-content-1 {
     margin-left: -25px;
     }
-
-
-    /* .portfolio-picture-profile-section .profile-content-1 h1 {
-    font-size: 40px;
-    margin-left: -30px;
-    } */
-
     
     hr {
         border-top: 1px solid black;
@@ -46,7 +30,7 @@
     font-weight: 200;
     margin-left: 1px;
     width: inherit;
-    /* margin-left: -25px; */
+
     }
     
     .sub-personal-statement-container-2 p {
@@ -91,9 +75,7 @@
 
 
 @media screen and (max-width: 428px) {
-   /* .wrapper-portfolio {
-    margin: 10px auto;
-    } */
+
     
     .Main-Portfolio-container {
     max-width: 420px;
