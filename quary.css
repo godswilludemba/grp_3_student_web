@@ -30,7 +30,7 @@ to avoid merge conflict  */
     }
 
     #nav_check:checked ~ nav{
-        left: 0;
+        left: -20px;
     }
 
     nav .logo{
@@ -55,6 +55,31 @@ to avoid merge conflict  */
     .hamburger{
         display: block;
     }
+}
+
+@media screen and (max-width: 1050px) {
+  .dashboard-side-menu li {
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .dashboard-side-menu li span {
+      display: none;
+  }
+  .dashboard-side-menu {
+      align-items: center;
+  }
+  .dashboard-side-menu li i {
+      width: 40px;
+      height: 40px;
+  }
+  .dashboard-side-menu li:hover {
+      background: #f05462;
+      padding: 8px 38px;
+      border: 2px solid white;
+      color: white;
+  }
 }
 
 
@@ -212,6 +237,31 @@ to avoid merge conflict  */
       }
 
   }
+
+
+
+
+
+
+
+
+@media screen and (max-width:536px) {
+  .brand-name h1 {
+      font-size: 10px;
+  }
+  .dashboard-container .content .cards {
+      justify-content: center;
+  }
+  .dashboard-side-menu  li i {
+      width: 30px;
+      height: 30px;
+  }
+
+  .dashboard-container .content .cards {
+      grid-template-columns: 1fr ;
+  }
+
+}
   
   /* Responsive styles for mobile devices (up to 480px) */
   @media screen and (max-width: 480px) {
