@@ -200,6 +200,9 @@ to avoid merge conflict  */
   
   /* Responsive styles for mobile devices (up to 480px) */
   @media screen and (max-width: 480px) {
+    #typing-text {
+      font-size: 4em;
+    }
     .homepage-header {
       padding: 10px;
     }

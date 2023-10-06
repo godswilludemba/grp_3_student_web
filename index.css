@@ -12,6 +12,67 @@ to avoid merge conflict  */
 }
 
 
+/* Preloader styles */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide preloader when content is loaded */
+.loaded .preloader {
+  display: none;
+}
+
+
+
+
+#typing-text {
+  font-size: 3em;
+  margin: 0;
+  overflow: hidden;  
+  white-space: nowrap; 
+  animation: typing 3s steps(40, end) infinite;
+   
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
 header{
   width: 90%;
   height: 70px;
@@ -29,6 +90,11 @@ header{
 .logo{
   width: 120px;
   margin-top: 8px;
+}
+
+.logo a{
+  text-decoration: none;
+  color: #114e60;
 }
 
 nav .logo{
@@ -127,6 +193,7 @@ nav ul a.active{
     padding: 5px;
     font-weight: 100;
 }
+
 
 
 
