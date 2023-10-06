@@ -58,7 +58,7 @@
         </div>
 
         <div class="homepage-hero-image">
-           <img src="./student-homepage.png" alt="" width="100%">
+           <img src="./Images/student-homepage.png" alt="" width="100%">
 
         </div>
 
@@ -82,7 +82,7 @@
 
     <div class="homepage-main-section2">
       <div class="homepage-section2-box1">
-        <img src="./student2-homepage.png" alt="" width="100%" >
+        <img src="./Images/student2-homepage.png" alt="" width="100%" >
 
       </div>
 
@@ -147,7 +147,7 @@
         
     </div>
       <div class="homepage-section3-box1">
-      <img src="./student3-homepage.jpg" alt="">
+      <img src="./Images/student3-homepage.jpg" alt="">
 
       </div>
 
@@ -160,19 +160,55 @@
     <footer class="responsive-footer">
       <div class="footer-logo">
         <h1>StudentAchieveStack</h1>
+        <p></p>
       </div>
   
       <div class="footer-Navlinks">
         <ul class="nav-links">
           <li><a href="index.html">&copy; 2023</a></li>
-         <li><a href="index.html">Terms & Conditions</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+
+const typingText = document.getElementById('typing-text');
+const originalText = "Are you a student ";
+
+function typeText() {
+  typingText.textContent = '';
+  let i = 0;
+
+  function type() {
+    if (i < originalText.length) {
+      typingText.textContent += originalText.charAt(i);
+      i++;
+      setTimeout(type, 100); // Adjust typing speed (milliseconds)
+    } else {
+      setTimeout(eraseText, 2000); // Wait for 2 seconds before erasing
+    }
+  }
+
+  function eraseText() {
+    if (i >= 0) {
+      typingText.textContent = originalText.substring(0, i);
+      i--;
+      setTimeout(eraseText, 50); // Adjust erasing speed (milliseconds)
+    } else {
+      setTimeout(type, 1000); // Wait for 1 second before typing again
+    }
+  }
+
+  type();
+}
+
+// Start typing on page load
+typeText();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

@@ -3,91 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="quary.css">
   <title>StudentAchieveStack - Sign Up</title>
 
-  <style>
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f5f5f5;
-      }
-      
-      .container {
-        width: 100%;
-        max-width: 400px;
-        padding: 20px;
-        box-sizing: border-box;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      
-      .signup-form {
-        display: flex;
-        flex-direction: column;
-      }
-      
-      h1 {
-        text-align: center;
-        color: #333;
-      }
-      
-      label {
-        margin-top: 10px;
-        font-size: 0.9em;
-        color: #555;
-      }
-      
-      input {
-        padding: 10px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-      
-      button {
-        background-color: #3498db;
-        color: #fff;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      
-      button:hover {
-        background-color: #2184b6;
-      }
-      
-
-  </style>
 </head>
 <body>
 
-<div class="container">
-  <form class="signup-form">
-    <h1>Sign Up</h1>
 
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+    <header>
+        <div class="logo">
+           <a href="index.html"><h1 id="main-logo">StudentAchieveStack</h1> </a>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo">
+                <h1 id="main-logo">StudentAchieveStack</h1>
+            </div>
+            <ul>
+            <li><a href="SignUp.html">Create Account</a></li>
+            <li><a href="Signin.html">Sign In</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="index.html">Blog/Article</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+        </label>
+    </header>
 
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
+    <div class="signup-wrapper">
 
-    <label for="confirm-password">Confirm Password</label>
-    <input type="password" id="confirm-password" name="confirm-password" required>
-
-    <button type="submit">Sign Up</button>
-  </form>
-</div>
-
+        <div class="sign-container">
+          <form class="signup-form" onsubmit="submitForm(event)">
+            <h1>StudentAchieveStack </h1>
+            <p><i>Create an Account below.</i></p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+      
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+      
+            <button type="submit">Sign Up</button>
+      
+            <p>Already have an account ? <a href="Signin.html">Sign in</a></p>
+          </form>
+        </div>
+      
+        <!-- Registration Success Modal -->
+        <div class="modal" id="successModal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p class="modal-text">Registration Successful!</p>
+          </div>
+        </div>
+      
+      </div>
+      
+      <footer class="responsive-footer">
+        <div class="footer-logo">
+          <h1>StudentAchieveStack</h1>
+        </div>
+      
+        <div class="footer-Navlinks">
+          <ul class="nav-links">
+            <li><a href="index.html">&copy; 2023</a></li>
+            <li><a href="index.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </footer>
+      
+      <script src="script.js"></script>
+      <script>
+        function submitForm(event) {
+          event.preventDefault(); // Prevent the form from submitting in the traditional way
+      
+          // Simulate registration success and show modal
+          setTimeout(() => {
+            document.getElementById('successModal').style.display = 'block';
+      
+            // Redirect to the login page after 3 seconds
+            setTimeout(() => {
+              window.location.href = 'Signin.html'; // Replace 'login.html' with your actual login page URL
+            }, 3000);
+          }, 3000); // Show modal after 3 seconds
+        }
+      </script>
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

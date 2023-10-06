@@ -113,8 +113,23 @@ to avoid merge conflict  */
       }
 
       .responsive-footer {
-        flex-direction: column;
+        /* flex-direction: column; */
+        grid-template-columns: 1fr;
+        padding: 10px;
       }
+
+      .footer-logo h1{
+        font-size: 16px;
+      }
+
+      .footer-Navlinks .nav-links {
+        gap: 10px;
+      }
+
+        
+  .footer-Navlinks .nav-links .nav-links li {
+    font-size: 4px;
+  }
 
 
       .Testimonial-content{
@@ -201,7 +216,7 @@ to avoid merge conflict  */
   /* Responsive styles for mobile devices (up to 480px) */
   @media screen and (max-width: 480px) {
     #typing-text {
-      font-size: 4em;
+      font-size: 2em;
     }
     .homepage-header {
       padding: 10px;
