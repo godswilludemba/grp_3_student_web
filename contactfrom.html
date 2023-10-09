@@ -4,12 +4,45 @@
   <head>
     <title>Contact Form</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="stylesheet" href="contactform@mediaQuery.css">
+    <link rel="stylesheet" href="quary.css">
   </head>
-  <body class="menu">
+  <body>
+    <div class="holder">   
+      <header>
+  
+        <div class="logo">
+           <a href=""><h1 id="main-logo">StudentAchieveStack</h1> </a>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo">
+                <h1 id="main-logo">StudentAchieveStack</h1>
+            </div>
+            <ul>
+            <li><a href="SignUp.html">Create Account</a></li>
+            <li><a href="Signin.html">Sign In</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="index.html">Blog/Article</a></li>
+            <li><a href="contactfrom.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </label>
+      
+    </header>
+    </div>
+
+
+
+
     <div class="container-contact-form">
       <h2 class="contact-us">Contact Us</h2>
-      <form class="submit-form" action="submit_form.php" method="POST">
+      <form class="submit-form" action="" method="POST">
         <label class="label" for="name">Name:</label>
         <input class="text-name"
           type="text"
@@ -41,5 +74,22 @@
         <input class="text-name" type="submit" value="Submit" />
       </form>
     </div>
+
+
+    <footer class="responsive-footer">
+      <div class="footer-logo">
+        <h1>StudentAchieveStack</h1>
+        <p></p>
+      </div>
+  
+      <div class="footer-Navlinks">
+        <ul class="nav-links">
+          <li><a href="index.html">&copy; 2023</a></li>
+          <li><a href="index.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

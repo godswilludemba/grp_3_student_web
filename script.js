@@ -1,19 +1,9 @@
-
-let menuOpen = false;
-
-function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  const menuIcon = document.querySelector('.menu-icon');
-
-  if (menuOpen) {
-    navLinks.style.display = 'none';
-    menuIcon.textContent = '☰';
-  } else {
-    navLinks.style.display = 'block';
-    menuIcon.textContent = '✕';
-  }
-
-  menuOpen = !menuOpen;
-}
+document.addEventListener("DOMContentLoaded", function () {
+  // Simulate a delay of 8 seconds (8000 milliseconds)
+  setTimeout(function () {
+    // Hide preloader when content is loaded
+    document.body.classList.add("loaded");
+  }, 2000);
+});
 
 
