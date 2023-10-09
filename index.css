@@ -104,6 +104,8 @@ header{
   height:70px;
   right: 0;
   left: 0;
+
+  z-index: 999;
   /* padding: 70px; */
   background-color: red;
   background-color: #fefefe;
@@ -912,7 +914,7 @@ h2 {
 .label {
   margin-bottom: 10px;
   font-weight: bold;
-  color: #4CAF50;
+  color: #114e60;
 }
 
 .text-name[type="text"],
@@ -925,7 +927,7 @@ textarea {
 }
 
 .text-name[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #114e60;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -934,7 +936,7 @@ textarea {
 }
 
 .text-name[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #114e60;
 }
 
 .text-name[type="number"]{
@@ -942,7 +944,7 @@ textarea {
 }
 
 textarea{
-  width: 24rem;
+  width: 23rem;
   height: 15rem;
 }
 
